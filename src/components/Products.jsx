@@ -39,14 +39,31 @@ const ShowProducts = () => {
 
   return (
 <>
-<div className="buttons">
-    <button className="btn btn-outline-dark">All</button>
+<div className="buttons d-flex justify-content-center mb-5 pb-5">
+    <button className="btn btn-outline-dark me-2">All</button>
     <button className="btn btn-outline-dark me-2">Men's Clothing</button>
     <button className="btn btn-outline-dark me-2">Women's Clothing</button>
     <button className="btn btn-outline-dark me-2">Jewelry</button>
     <button className="btn btn-outline-dark me-2">Electronics</button>
   </div>
-</>
+  {filter.map((product) =>{
+    return (
+    <>
+    <div className="col-md-3">
+    <div class="card h-100 text-center p-4" key={product.id}>
+  <img src={product.image} class="card-img-top" alt={product.title}/>
+  <div class="card-body">
+    <h5 class="card-title">{product.title}</h5>
+    <p class="card-text">${product.price}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    </div>
+    </>
+    )
+  })}
+  </>
 
   );
 

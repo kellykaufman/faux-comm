@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function  () {
   return (
    
     <div><nav class="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold fs-4" href="#">Faux Comm</a>
+      <NavLink class="navbar-brand fw-bold fs-4" to="">Faux Comm</NavLink>
       <button 
       class="navbar-toggler" 
       type="button" 
@@ -20,16 +21,16 @@ export default function  () {
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
        
         <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <NavLink class="nav-link active" aria-current="page" to="/">Home</NavLink>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <NavLink class="nav-link" to="/products">Products</NavLink>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <NavLink class="nav-link" to="/about">About</NavLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <NavLink class="nav-link" to="/contact">Contact</NavLink>
           </li>
         </ul>
      <div className="buttons">

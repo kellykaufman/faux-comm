@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom';
+import Skeleton from 'react-loading-skeleton';
 
 export const Product = () => {
 
@@ -23,7 +24,11 @@ export const Product = () => {
 const Loading = () => {
   return (
     <>
-    Loading....
+    <div className="col-md-6">
+      <Skeleton height={50} width={300}/>
+      <Skeleton height={75}/>
+      <Skeleton height={25}/>
+    </div>
     </>
   )
 };
@@ -45,16 +50,16 @@ const ShowProduct = () => {
       </p>
      <h3 className="display-6 fw-bold my-4"> ${product.price}</h3>
      <p className="lead">{product.description}</p>
-     <button className="btn btn-outline-dark">Add to Cart</button>
-     <NavLink className="btn btn-outline-dark">Go to Cart</NavLink>
+     <button className="btn btn-outline-dark px-4 py-2">Add to Cart</button>
+     <NavLink to="/cart"className="btn btn-outline-dark ms-2 px-3 py-2">Go to Cart</NavLink>
     </div>
     </>
   )
 }
 
   return (
-    <div><div className="container">
-      <div className="row">
+    <div><div className="container py-5">
+      <div className="row py-4">
         {loading ? <Loading/> : <ShowProduct/>}</div></div></div>
   )
 }

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export const Product = () => {
 
@@ -38,10 +39,14 @@ const ShowProduct = () => {
         {product.category}
       </h4>
       <h1 className="display-5"> {product.title}</h1>
-      <p className="lead">
+      <p className="lead fw-bolder">
         Rating {product.rating && product.rating.rate}
         <i className="fa fa-star"></i>
       </p>
+     <h3 className="display-6 fw-bold my-4"> ${product.price}</h3>
+     <p className="lead">{product.description}</p>
+     <button className="btn btn-outline-dark">Add to Cart</button>
+     <NavLink className="btn btn-outline-dark">Go to Cart</NavLink>
     </div>
     </>
   )

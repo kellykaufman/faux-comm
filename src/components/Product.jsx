@@ -17,21 +17,21 @@ export const Product = () => {
       setLoading(false);
     }
     getProduct();
-  }, [input]);
+  }, [id]);
 
 
 
 const Loading = () => {
   return (
     <>
-    <div className="col-md-6">
+    <div className="col-md-6" style={{lineHeight: 2}}>
       <Skeleton height={50} width={300}/>
       <Skeleton height={75}/>
       <Skeleton height={25} width={150}/>
       <Skeleton height={50}/>
       <Skeleton height={150}/>
       <Skeleton height={50} width={100}/>
-      <Skeleton height={50} width={100} style={{marginLeft}}/>
+      <Skeleton height={50} width={100} style={{marginLeft:6}}/>
     </div>
     </>
   )

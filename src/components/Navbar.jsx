@@ -1,36 +1,36 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function  () {
+export default function Navbar () {
   return (
    
-    <div><nav class="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
-    <div class="container">
-      <NavLink class="navbar-brand fw-bold fs-4" to="">Faux Comm</NavLink>
+    <div><nav className="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
+    <div className="container">
+      <NavLink className="navbar-brand fw-bold fs-4" to="">Faux Comm</NavLink>
       <button 
-      class="navbar-toggler" 
+      className="navbar-toggler" 
       type="button" 
       data-bs-toggle="collapse" 
       data-bs-target="#navbarSupportedContent" 
       aria-controls="navbarSupportedContent" 
       aria-expanded="false" 
        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button> 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
        
-        <li class="nav-item">
-            <NavLink class="nav-link active" aria-current="page" to="/">Home</NavLink>
+        <li className="nav-item">
+            <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
           </li>
-        <li class="nav-item">
-            <NavLink class="nav-link" to="/products">Products</NavLink>
+        <li className="nav-item">
+            <NavLink className="nav-link" to="/products">Products</NavLink>
           </li>
-        <li class="nav-item">
-            <NavLink class="nav-link" to="/about">About</NavLink>
+        <li className="nav-item">
+            <NavLink className="nav-link" to="/about">About</NavLink>
           </li>
-          <li class="nav-item">
-            <NavLink class="nav-link" to="/contact">Contact</NavLink>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/contact">Contact</NavLink>
           </li>
         </ul>
      <div className="buttons">

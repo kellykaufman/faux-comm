@@ -6,7 +6,7 @@ export default function Navbar () {
    
     <div><nav className="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
     <div className="container">
-      <NavLink className="navbar-brand fw-bold fs-4" to="">Faux Comm</NavLink>
+      <NavLink className="navbar-brand fw-bold fs-4" to="/    ">Faux Comm</NavLink>
       <button 
       className="navbar-toggler" 
       type="button" 
@@ -34,11 +34,11 @@ export default function Navbar () {
           </li>
         </ul>
      <div className="buttons">
-       <a href="" className="btn btn-outline-dark"> 
-       <i className="fa fa-sign-in-me-1" ></i>Login</a>
-    <a href="" className="btn btn-outline-dark ms-2"> 
-    <i className="fa-solid fa-user-plus me-1"></i>Register</a>
-    <a href="" className="btn btn-outline-dark"> <i className="fa fa-shopping-cart me-1" ></i>Cart(0)</a>
+       <NavLink to="/login" className="btn btn-outline-dark"> 
+       <i className="fa fa-sign-in-me-1" ></i>Login</NavLink>
+    <NavLink to="/register" className="btn btn-outline-dark ms-2"> 
+    <i className="fa-solid fa-user-plus me-1"></i>Register</NavLink>
+    <NavLink to="/cart" className="btn btn-outline-dark"> <i className="fa fa-shopping-cart me-1" ></i>Cart(0)</NavLink>
     </div>
     </div>
     </div>

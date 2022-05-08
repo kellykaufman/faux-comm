@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Products from './Products';
 import backgroundPhoto from "../assets/backgroundmain.jpg";
 

@@ -6,22 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
-import Products from "./components/Products";
-import { Product } from "./components/Product";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/products " element={<Products />} />
-        <Route exact path="/products/:id " element={<Product />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

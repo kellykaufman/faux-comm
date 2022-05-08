@@ -2,7 +2,7 @@
 
 export const addCart = (product) => {
   return {
-    type: "ADDCART",
+    type: "ADDITEM",
     payload: product,
   };
 };

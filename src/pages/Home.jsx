@@ -1,8 +1,9 @@
 import React from 'react';
-import Products from './Products';
+// Imports
+import { NavLink } from "react-router-dom";
 import backgroundPhoto from "../assets/backgroundmain.jpg";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="hero">
 <div className="card bg-dark text-white border-0">

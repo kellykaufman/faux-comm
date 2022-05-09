@@ -3,7 +3,7 @@ const cart = [];
 const handleCart = () => {
   const product = action.payload;
   switch (action.type) {
-    case ADDITEM:
+    case "ADDITEM":
       // Check if Product exists already
       const exist = state.find((x) => x.id === product.id);
       if (exist) {
@@ -35,6 +35,7 @@ const handleCart = () => {
       break;
 
     default:
+      return state;
       break;
   }
 };

@@ -12,7 +12,7 @@ function Footer() {
                       <a className="text-dark mx-1" href="#"><i className="fa fa-facebook-official" aria-hidden="true"></i></a>
                       <a className="text-dark mx-1" href="#"><i className="fa fa-github" aria-hidden="true"></i></a>
                         </div>
-                      <span className="text-dark fw-bold">&copy;FauxMart 2022</span>
+                      <span className="text-dark fw-bold">&copy;Faux Comm Incorporated 2022</span>
                  </div>
                  </div>
              </footer>

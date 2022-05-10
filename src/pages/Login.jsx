@@ -14,7 +14,7 @@ const Login = () => {
       <br />
       <label className="mt-1 mb-5 fw-bold fs-5">Password:</label>
         <input type="password" placeholder="Password" />
-        <button className="btn btn-danger fw-bold px-4 py-2 mx-3"type="submit">Login</button>
+        <button className="btn btn-primary fw-bold px-4 py-2 mx-3"type="submit" id="font2">Login</button>
       </form>
 
       <p className="mt-5">

@@ -7,7 +7,7 @@ const Register = () => {
         <div className="container my-5 py-5">
             <div className="row">
                 <div className="col-12">
-                    <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+                    <h1 className="display-3 fw-bolder text-center text-shadow-navlinks text-primary" id="font2">
                         Register
                     </h1>
                     <hr />
@@ -17,11 +17,11 @@ const Register = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 mb-5 mx-auto col-md-8 text-center text-title text-uppercase">
-                                <h1 className=" mb-3">Please fill in the form below</h1>
+                                <h1 className=" mb-3" id="font3">Please fill in the form below</h1>
 
                                 <form>
-                                    <div className="form-group">
-                                        <label htmlFor="exampleInputEmail1">
+                                    <div className="form-group fw-bold">
+                                        <label htmlFor="exampleInputEmail1" id="font4">
                                             Email address
                                         </label>
                                         <input

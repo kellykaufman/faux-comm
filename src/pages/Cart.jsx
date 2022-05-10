@@ -45,7 +45,7 @@ else {
     <div>
       <div className="container my-5 py-5">
         <div className="row">
-          <div className="col-12 mb-5">
+          <div className="col-12 mb-5" id="font2">
             <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
               Cart
             </h1>
@@ -64,11 +64,11 @@ else {
                 />
               </div>
               <div className="col-md-8">
-                <h4 className="text-uppercase fw-bold text-black">
+                <h4 className="text-uppercase fw-bold text-black" id="font4">
                   {item.title}
                 </h4>
-                <p className="lead fw-bolder">Price: ${(item.price).toFixed(2)} </p>
-                <p className="lead fw-bold">Quantity: {item.quantity}</p>
+                <p className="lead fw-bolder" id="font2">Price: ${(item.price).toFixed(2)} </p>
+                <p className="lead fw-bold" id="font2">Quantity: {item.quantity}</p>
               </div>
               <div className="col-md-2 d-flex justify-content-end  mt-5 mb-5" id="cartsubtotal">
                 ${(item.price*item.quantity).toFixed(2)}
@@ -78,7 +78,7 @@ else {
         ))}
         <div className="container border-top p-5">
           <div className="row d-flex">
-            <div className="col-md-12 text-end fs-3 fw-bold d-flex flex-column align-items-end">
+            <div className="col-md-12 text-end fs-3 fw-bold d-flex flex-column align-items-end" id="font1">
               <hr />
               Subtotal: ${subTotal.toFixed(2)}
               <NavLink to="/checkout" className="btn btn-primary col-md-2 fw-bold justify-content-end mt-3" id="font2">Checkout</NavLink>

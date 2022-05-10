@@ -20,7 +20,7 @@ const Checkout = () => {
         <div className="container my-5 py-5">
         <div className="row">
           <div className="col-md-12 ">
-            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks" id="font2">
               Checkout
             </h1>
             <hr />
@@ -67,9 +67,9 @@ const Checkout = () => {
       <div class="col-md-6 container-fluid bg-default d-flex justify-content-end ">
         <form>
           <div class="form-row">
-            <h4 class="my-4">Billing Address</h4>
+            <h4 class="my-4" id="font2">Billing Address</h4>
             <div class="col-md-4 form-group">
-              <label for="firstname">First Name</label>
+              <label for="firstname" id="font4">First Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -80,7 +80,7 @@ const Checkout = () => {
               <div class="invalid-feedback">Valid first name is required.</div>
             </div>
             <div class="col-md-6 form-group">
-              <label for="lastname">Last Name</label>
+              <label for="lastname" id="font4">Last Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -93,7 +93,7 @@ const Checkout = () => {
           </div>
 
           <div class="form-group">
-            <label for="adress">Address</label>
+            <label for="adress" id="font4">Address</label>
             <input
               type="text"
               class="form-control"
@@ -107,7 +107,7 @@ const Checkout = () => {
           </div>
 
           <div class="form-group">
-            <label for="address2">
+            <label for="address2" id="font4">
               Address 2<span class="text-muted">(Optional)</span>
             </label>
             <input
@@ -120,17 +120,17 @@ const Checkout = () => {
 
           <div class="row">
             <div class="col-md-4 form-group">
-              <label for="country">Country</label>
+              <label for="country" id="font4">Country</label>
               <input type="text" class="form-control" id="country" required />
             </div>
 
             <div class="col-md-4 form-group">
-              <label for="city">City</label>
+              <label for="city" id="font4">City</label>
               <input type="text" class="form-control" id="city" required/>
             </div>
 
             <div class="col-md-4 form-group">
-              <label for="postcode">zipcode</label>
+              <label for="postcode" id="font4">zipcode</label>
               <input type="text" class="form-control" id="zipcode" required/>
 
               <div class="invalid-feedback">Postcode required.</div>
@@ -139,7 +139,7 @@ const Checkout = () => {
 
           <hr />
 
-          <div class="form-check">
+          <div class="form-check" id="font4">
             <input
               type="checkbox"
               class="form-check-input"
@@ -149,7 +149,7 @@ const Checkout = () => {
             <label for="shipping-adress" class="form-check-label"></label>
           </div>
 
-          <div class="form-check">
+          <div class="form-check" id="font4">
             <input type="checkbox" class="form-check-input" id="same-adress" />
             Save this information for next time
             <label for="same-adress" class="form-check-label"></label>
@@ -157,7 +157,7 @@ const Checkout = () => {
 
           <hr />
 
-          <h4 class="mb-4">Payment</h4>
+          <h4 class="mb-4" id="font4">Payment</h4>
 
           <div class="form-check">
             <input
@@ -168,7 +168,7 @@ const Checkout = () => {
               checked
               required
             />
-            <label for="credit" class="form-check-label">
+            <label for="credit" class="form-check-label" id="font4">
               Credit Card
             </label>
           </div>
@@ -181,7 +181,7 @@ const Checkout = () => {
               name="payment-method"
               required
             />
-            <label for="debit" class="form-check-label">
+            <label for="debit" class="form-check-label" id="font4">
               Debit Card
             </label>
           </div>
@@ -194,14 +194,14 @@ const Checkout = () => {
               name="payment-method"
               required
             />
-            <label for="paypal" class="form-check-label">
+            <label for="paypal" class="form-check-label" id="font4">
               PayPal
             </label>
           </div>
 
           <div class="row mt-4">
             <div class="col-md-6 form-group">
-              <label for="card-name">Name on card</label>
+              <label for="card-name" id="font4">Name on card</label>
               <input
                 type="text"
                 class="form-control"
@@ -213,7 +213,7 @@ const Checkout = () => {
             </div>
 
             <div class="col-md-6 form-group">
-              <label for="card-no">Card Number</label>
+              <label for="card-no" id="font4">Card Number</label>
               <input
                 type="text"
                 class="form-control"
@@ -227,7 +227,7 @@ const Checkout = () => {
 
           <div class="form-row">
             <div class="col-md-5 form-group">
-              <label for="expiration">Expire Date</label>
+              <label for="expiration" id="font4">Expire Date</label>
               <input
                 type="text"
                 class="form-control"
@@ -239,7 +239,7 @@ const Checkout = () => {
             </div>
 
             <div class="col-md-5 form-group">
-              <label for="ccv-no"> CVV</label>
+              <label for="ccv-no" id="font4"> CVV</label>
               <input
                 type="text"
                 class="form-control"

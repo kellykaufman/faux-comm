@@ -7,12 +7,12 @@ const Login = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 d-flex flex-column align-items-center mt-5 border mb-5" id="box-shadow">
-        <h1 className="display-3 fw-bolder text-center text-shadow-navlinks mt-5">Login</h1>
+        <h1 className="display-3 fw-bolder text-center text-shadow-navlinks mt-5 text-primary" id="font2">Login</h1>
       <form>
-        <label className="mt-5 mb-3 fw-bold fs-5">Username:</label>
+        <label className="mt-5 mb-3 fs-5" id="font2">Username:</label>
         <input type="text" placeholder="Username" />
       <br />
-      <label className="mt-1 mb-5 fw-bold fs-5">Password:</label>
+      <label className="mt-1 mb-5 fs-5" id="font2">Password:</label>
         <input type="password" placeholder="Password" />
         <button className="btn btn-primary fw-bold px-4 py-2 mx-3"type="submit" id="font2">Login</button>
       </form>

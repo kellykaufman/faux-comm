@@ -10,15 +10,15 @@ const Home = () => {
   <img src={backgroundPhoto} className="card-img" alt="Background" height= "700px"/>
   <div className="card-img-overlay d-flex justify-content-center flex-column ">
           <div className="container">
-            <h5 className="card-title display-3 fw-bolder mb-0 text-shadow">
+            <h5 className="card-title display-3 fw-bolder mb-0 text-shadow" id="font3">
               CHECK OUT THE NEW ARRIVALS
             </h5>
-            <p className="card-text fs-2 text-shadow">
+            <p className="card-text fs-2 text-shadow" id="font1">
               WOMEN'S BATHING SUITS ON SALE!
             </p>
             <NavLink
               to="/products"
-              className="btn btn-danger fs-3 fw-bold py-2 px-5"
+              className="btn btn-primary fs-3 fw-bold py-2 px-5" id="font2"
             >
               Shop Now!
             </NavLink>

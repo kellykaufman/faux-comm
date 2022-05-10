@@ -1,7 +1,16 @@
 /* Navbar */
 
-*{
-  
+
+#font1{
+  font-family: 'Monoton', cursive;
+}
+
+#font2{
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#font3{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .navbar-nav a{

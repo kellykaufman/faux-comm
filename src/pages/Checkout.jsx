@@ -253,7 +253,7 @@ const Checkout = () => {
 
           <hr class="mb-3" />
 
-          <NavLink to="/products" className="btn btn-danger col-md-2 fw-bold justify-content-end mt-3 mb-4" type="submit" onClick={ClearCart}>Checkout</NavLink>
+          <NavLink to="/products" className="btn btn-primary col-md-2 fw-bold justify-content-end mt-3 mb-4" type="submit" onClick={ClearCart} id="font2">Checkout</NavLink>
         </form>
       </div>
       </div>

@@ -81,7 +81,7 @@ else {
             <div className="col-md-12 text-end fs-3 fw-bold d-flex flex-column align-items-end">
               <hr />
               Subtotal: ${subTotal.toFixed(2)}
-              <NavLink to="/checkout" className="btn btn-danger col-md-2 fw-bold justify-content-end mt-3">Checkout</NavLink>
+              <NavLink to="/checkout" className="btn btn-primary col-md-2 fw-bold justify-content-end mt-3" id="font2">Checkout</NavLink>
               </div>
               </div>
               </div>

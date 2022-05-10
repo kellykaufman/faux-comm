@@ -72,11 +72,11 @@ const ProductDetails = () => {
           {/*add to cart button with onclick that adds product to cart  */}
           <NavLink
             to="/cart"
-            className="btn btn-outline-danger fw-bold px-4 py-2 mb-5 mt-1 ms-2"
+            className="btn btn-outline-primary fw-bold px-4 py-2 mb-5 mt-1 ms-2"
             onClick={() => setCart([...cart, product])}
             id="box-shadow"
           >
-            <i className="fa fa-shopping-cart me-1" aria-hidden="true"></i>
+            <i className="fa fa-shopping-cart me-1" aria-hidden="true" id="font2"></i>
             Add to Cart
           </NavLink>
         </div>

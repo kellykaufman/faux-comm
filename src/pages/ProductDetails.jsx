@@ -74,9 +74,9 @@ const ProductDetails = () => {
             to="/cart"
             className="btn btn-outline-primary fw-bold px-4 py-2 mb-5 mt-1 ms-2"
             onClick={() => setCart([...cart, product])}
-            id="box-shadow"
+            id="font2"
           >
-            <i className="fa fa-shopping-cart me-1" aria-hidden="true" id="font2"></i>
+            <i className="fa fa-shopping-cart me-1" aria-hidden="true"></i>
             Add to Cart
           </NavLink>
         </div>

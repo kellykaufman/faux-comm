@@ -19,7 +19,7 @@ if (cart.length === 0) {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks" id="font2">
               Cart
             </h1>
             <hr />
@@ -30,10 +30,10 @@ if (cart.length === 0) {
     <div className="container">
       <div className="row">
         <div className="col-md-8 mb-5 mx-auto col-md-8 text-center text-title text-uppercase">
-          <h1 className="display-3 mb-3">Your cart is currently empty</h1>
+          <h1 className="display-3 mb-3" id="font3">Your cart is currently empty</h1>
           </div>
           <div className="col-md-12 text-center text-title text-uppercase mb-5">
-          <NavLink to="/products" className=" btn btn-danger fw-bold fs-3">Please click here to view products page</NavLink>
+          <NavLink to="/products" className=" btn btn-primary fw-bold fs-3" id="font3">Please click here to view products page</NavLink>
           </div>
         </div>  
       </div>

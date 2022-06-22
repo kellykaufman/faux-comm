@@ -21,8 +21,10 @@ const ProductDetails = () => {
     console.log(product.quantity) // Here you can get the value of the Quantity picker
 }
 
+getPickerValue(1);
   // useEffect to get the product with the id from the products array
   useEffect(() => {
+
     const getProduct = async () => {
       setLoading(true);
       const response = await fetch(`https://fakestoreapi.com/products/${id}`);
@@ -66,7 +68,7 @@ const ProductDetails = () => {
           </p>
           <h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
           <p className="lead">{product.description}</p>
-          <QuantityPicker  min={1} max={10} value={0} onChange={getPickerValue} smooth/>
+          <QuantityPicker  min={1} max={10} value={1} onChange={getPickerValue} smooth/>
           <br />
             
           {/*add to cart button with onclick that adds product to cart  */}

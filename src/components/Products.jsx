@@ -29,54 +29,98 @@ const Products = () => {
     };
 
     getProducts();
-    
   }, []);
   // Created function for loading skeleton
   const Loading = () => {
     return (
-    <>
-    <div className="container d-flex justify-content-center">
-      <div className="row">
-        <div className="col-md-12 fs-1">
-          Loading.....
+      <>
+        <div className="container d-flex justify-content-center">
+          <div className="row">
+            <div className="col-md-12 fs-1">Loading.....</div>
+          </div>
         </div>
-        </div>
-      </div>
-    </>
+      </>
     );
   };
   // Created a function for displaying the products by mapping through the data and filter and returning a div with the product name and price and image
   const filterProducts = (cat) => {
-      const updatedList = data.filter((x, id) =>x.category === cat);
-        setFilter(updatedList);
-  }
+    const updatedList = data.filter((x, id) => x.category === cat);
+    setFilter(updatedList);
+  };
   // Created a function for displaying the products by filtered data
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center mb-5 pb-5" id="font2">
-          <button className="btn btn-outline-primary fw-bold me-2" id="box-shadow" onClick={() => setFilter(data)}>All</button>
-          <button className="btn btn-outline-primary fw-bold me-2" id="box-shadow" onClick={() => filterProducts("men's clothing")}>Men's Clothing</button>
-          <button className="btn btn-outline-primary fw-bold me-2" id="box-shadow" onClick={() => filterProducts("women's clothing")}>Women's Clothing</button>
-          <button className="btn btn-outline-primary fw-bold me-2" id="box-shadow" onClick={() => filterProducts("jewelery")}>Jewelery</button>
-          <button className="btn btn-outline-primary fw-bold me-2" id="box-shadow" onClick={() => filterProducts("electronics")}>Electronics</button>
+        <div
+          className="buttons d-flex justify-content-center mb-5 pb-5"
+          id="font2"
+        >
+          <button
+            className="btn btn-outline-primary fw-bold me-2"
+            id="box-shadow"
+            onClick={() => setFilter(data)}
+          >
+            All
+          </button>
+          <button
+            className="btn btn-outline-primary fw-bold me-2"
+            id="box-shadow"
+            onClick={() => filterProducts("men's clothing")}
+          >
+            Men's Clothing
+          </button>
+          <button
+            className="btn btn-outline-primary fw-bold me-2"
+            id="box-shadow"
+            onClick={() => filterProducts("women's clothing")}
+          >
+            Women's Clothing
+          </button>
+          <button
+            className="btn btn-outline-primary fw-bold me-2"
+            id="box-shadow"
+            onClick={() => filterProducts("jewelery")}
+          >
+            Jewelery
+          </button>
+          <button
+            className="btn btn-outline-primary fw-bold me-2"
+            id="box-shadow"
+            onClick={() => filterProducts("electronics")}
+          >
+            Electronics
+          </button>
         </div>
         {filter.map((product) => {
-            return(
-                <>
-                <div className="col-md-3 mb-4" >
-                <div className="card h-100 text-center p-4" key={product.id} id="box-shadow">
-  <img src={product.image} class="card-img-top" alt={product.title} height="250px"/>
-  <div className="card-body">
-    <h5 className="card-title fw-bold">{product.title}</h5>
-    <p className="card-text lead fw-bold">${product.price}</p>
-    <NavLink to={`/products/${product.id}`} className="btn btn-outline-primary fw-bold" id="font4">Buy Now</NavLink>
-  </div>
-</div>
+          return (
+            <>
+              <div className="col-md-3 mb-4">
+                <div
+                  className="card h-100 text-center p-4"
+                  key={product.id}
+                  id="box-shadow"
+                >
+                  <img
+                    src={product.image}
+                    class="card-img-top"
+                    alt={product.title}
+                    height="250px"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title fw-bold">{product.title}</h5>
+                    <p className="card-text lead fw-bold">${product.price}</p>
+                    <NavLink
+                      to={`/products/${product.id}`}
+                      className="btn btn-outline-primary fw-bold"
+                      id="font4"
+                    >
+                      Buy Now
+                    </NavLink>
+                  </div>
                 </div>
-                </>
-            )
-
+              </div>
+            </>
+          );
         })}
       </>
     );
@@ -86,14 +130,17 @@ const Products = () => {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks text-primary" id="font2">
+            <h1
+              className="display-3 fw-bolder text-center text-shadow-navlinks text-primary"
+              id="font2"
+            >
               Latest Arrivals
             </h1>
             <hr />
           </div>
         </div>
         <div className="row justify-content-center">
-          {loading ? <Loading/> : <ShowProducts/>}
+          {loading ? <Loading /> : <ShowProducts />}
         </div>
       </div>
     </div>

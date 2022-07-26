@@ -108,7 +108,9 @@ const Products = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title fw-bold">{product.title}</h5>
-                    <p className="card-text lead fw-bold">${product.price}</p>
+                    <p className="card-text lead fw-bold">
+                      ${product.price.toFixed(2)}
+                    </p>
                     <NavLink
                       to={`/products/${product.id}`}
                       className="btn btn-outline-primary fw-bold"

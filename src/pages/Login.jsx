@@ -36,10 +36,6 @@ const Login = () => {
           <p className="mt-5">
             Don't have an account? <a href="/register">Register</a>
           </p>
-
-          <p className="mb-5">
-            Forgot your password? <a href="/forgot-password">Reset</a>
-          </p>
         </div>
       </div>
     </div>
